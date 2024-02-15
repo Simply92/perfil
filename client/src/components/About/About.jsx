@@ -4,26 +4,37 @@ import videoFile from "../../assets/video.mp4";
 
 const About = () => {
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box
+      sx={{
+        background: "linear-gradient(var(--black),var(--black2))",
+        overflow: "hidden",
+        padding: "14rem 0 12rem",
+        position: "relative",
+      }}
+    >
       <Box
         sx={{
-          width: "100%",
-          maxHeight: "500px",
           overflow: "hidden",
           opacity: ".1",
-          objectFit: "cover",
+          left: "50%",
+          minHeight: "100%",
+          minWidth: "100%",
+          position: "absolute",
+          top: "50%",
+          transform: "translate(-50%,-55%)",
         }}
       >
         <ReactPlayer
           url={videoFile}
-          width="100vw"
+          width="100%"
+          height="100%"
           controls={false}
           playing
           muted
           loop
         />
       </Box>
-      <Box display="flex" flexDirection="column">
+      <Box display="flex" flexDirection="column" alignItems="center">
         <Typography
           variant="h5"
           sx={{
