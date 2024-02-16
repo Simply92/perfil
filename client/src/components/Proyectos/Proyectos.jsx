@@ -33,8 +33,8 @@ const Proyectos = () => {
   ];
 
   return (
-    <Box>
-      <Typography>PORTFOLIO</Typography>
+    <Box display="flex" flexDirection="column" alignItems="center">
+      <Typography variant="h3">PORTFOLIO</Typography>
       <Box display="flex" flexDirection="column">
         {proyects.map((proyect) => (
           <Card
