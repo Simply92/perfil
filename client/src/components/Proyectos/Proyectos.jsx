@@ -1,6 +1,7 @@
 import { Box, CardContent, CardMedia, Typography, styled } from "@mui/material";
 import Proyect1 from "../../assets/HyperMegaRed.jpeg";
 import Proyect2 from "../../assets/PokemonLogo.png";
+import Proyect3 from "../../assets/RickAndMorty.png";
 import Card from "@mui/material/Card";
 
 const Proyectos = () => {
@@ -27,6 +28,13 @@ const Proyectos = () => {
       id: 1,
       name: "Pokemon",
       image: Proyect2,
+      descripcion:
+        "Proyecto individual de curso full stack developer de Henry, se realizo con vite, React, Redux, express, postgres, NodeJS",
+    },
+    {
+      id: 2,
+      name: "Rick and Morty",
+      image: Proyect3,
       descripcion:
         "Proyecto individual de curso full stack developer de Henry, se realizo con vite, React, Redux, express, postgres, NodeJS",
     },
