@@ -7,8 +7,8 @@ import Card from "@mui/material/Card";
 const Proyectos = () => {
   const ProductMedia = styled(CardMedia)({
     padding: 5,
-    height: 140,
-    width: 140,
+    height: "100%",
+    width: "100%",
     objectFit: "cover",
     // Estilos adicionales para dispositivos móviles
     "@media (max-width: 600px)": {
@@ -45,11 +45,7 @@ const Proyectos = () => {
       <Typography variant="h3">PORTFOLIO</Typography>
       <Box display="flex" flexDirection="column">
         {proyects.map((proyect) => (
-          <Card
-            display="flex"
-            key={proyect.id}
-            sx={{ flexDirection: "column" }}
-          >
+          <Card display="flex" key={proyect.id} sx={{ flexDirection: "row" }}>
             <ProductMedia
               component="img"
               src={proyect.image}
@@ -61,6 +57,7 @@ const Proyectos = () => {
             />
             <CardContent>
               <Typography>{proyect.name}</Typography>
+              <Typography>{proyect.descripcion}</Typography>
             </CardContent>
           </Card>
         ))}
