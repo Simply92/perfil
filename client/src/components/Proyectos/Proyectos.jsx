@@ -9,6 +9,7 @@ const Proyectos = () => {
     padding: 5,
     height: "100%",
     width: "100%",
+    backgroundColor: "white",
     objectFit: "cover",
     // Estilos adicionales para dispositivos móviles
     "@media (max-width: 600px)": {
@@ -45,7 +46,11 @@ const Proyectos = () => {
       <Typography variant="h3">PORTFOLIO</Typography>
       <Box display="flex" flexDirection="column">
         {proyects.map((proyect) => (
-          <Card display="flex" key={proyect.id} sx={{ flexDirection: "row" }}>
+          <Card
+            display="flex"
+            key={proyect.id}
+            sx={{ flexDirection: "row", mt: 10 }}
+          >
             <ProductMedia
               component="img"
               src={proyect.image}
