@@ -3,6 +3,7 @@ import Proyect1 from "../../assets/HyperMegaRed.jpeg";
 import Proyect2 from "../../assets/PokemonLogo.png";
 import Proyect3 from "../../assets/RickAndMorty.png";
 import Card from "@mui/material/Card";
+import { Link } from "react-router-dom";
 
 const Proyectos = () => {
   const ProductMedia = styled(CardMedia)({
@@ -22,6 +23,7 @@ const Proyectos = () => {
       id: 0,
       name: "Hyper Mega Red",
       image: Proyect1,
+      url: "https://pf-henry-sepia.vercel.app/",
       descripcion:
         "Proyecto final de curso full stack developer de Henry, tecnologias usadas vite, React, Redux Toolkit, Material UI, express, postgres, NodeJS ",
     },
@@ -29,6 +31,7 @@ const Proyectos = () => {
       id: 1,
       name: "Pokemon",
       image: Proyect2,
+      url: "https://pi-pokemon-pedro-gonzalez.vercel.app/",
       descripcion:
         "Proyecto individual de curso full stack developer de Henry, se realizo con vite, React, Redux, express, postgres, NodeJS",
     },
@@ -36,6 +39,7 @@ const Proyectos = () => {
       id: 2,
       name: "Rick and Morty",
       image: Proyect3,
+      url: "https://rick-and-morty-simply92.vercel.app/",
       descripcion:
         "Proyecto individual de curso full stack developer de Henry, se realizo con vite, React, Redux, express, postgres, NodeJS",
     },
@@ -51,15 +55,17 @@ const Proyectos = () => {
             key={proyect.id}
             sx={{ flexDirection: "row", mt: 10 }}
           >
-            <ProductMedia
-              component="img"
-              src={proyect.image}
-              alt={proyect.name}
-              sx={{
-                width: { xxs: "140px", sm: "150px" },
-                cursor: "pointer",
-              }}
-            />
+            <Link to={proyect.url}>
+              <ProductMedia
+                component="img"
+                src={proyect.image}
+                alt={proyect.name}
+                sx={{
+                  width: { xxs: "140px", sm: "150px" },
+                  cursor: "pointer",
+                }}
+              />
+            </Link>
             <CardContent>
               <Typography>{proyect.name}</Typography>
               <Typography>{proyect.descripcion}</Typography>
