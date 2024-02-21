@@ -47,13 +47,20 @@ const Proyectos = () => {
 
   return (
     <Box display="flex" flexDirection="column" alignItems="center">
-      <Typography variant="h3">PORTFOLIO</Typography>
-      <Box display="flex" flexDirection="column">
+      <Typography variant="h3">PROYECTOS</Typography>
+      <Box>
         {proyects.map((proyect) => (
           <Card
-            display="flex"
             key={proyect.id}
-            sx={{ flexDirection: "row", mt: 10 }}
+            sx={{
+              padding: 2,
+              mt: 5,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              border: "solid 1px",
+              borderRadius: 3,
+            }}
           >
             <Link to={proyect.url}>
               <ProductMedia
@@ -66,7 +73,14 @@ const Proyectos = () => {
                 }}
               />
             </Link>
-            <CardContent>
+            <CardContent
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                flexDirection: "column",
+                padding: 1,
+              }}
+            >
               <Typography>{proyect.name}</Typography>
               <Typography>{proyect.descripcion}</Typography>
             </CardContent>

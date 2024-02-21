@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Sobre mi", "Portfolio", "Contacto"];
+const pages = ["Sobre mi", "Habidades", "Proyectos", "Contacto"];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
