@@ -18,7 +18,7 @@ const Skills = () => {
               src={logo.img}
               alt={logo.name}
               sx={{
-                width: 120,
+                width: 100,
               }}
             />
           </Box>
