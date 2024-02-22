@@ -2,6 +2,7 @@ import { Box, CardMedia, Typography } from "@mui/material";
 import logos from "../../utils/logos";
 
 const Skills = () => {
+  console.log(logos);
   return (
     <Box
       display="flex"

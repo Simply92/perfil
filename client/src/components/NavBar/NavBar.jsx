@@ -3,11 +3,13 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import redes from "../../utils/redes";
+import { CardMedia, Typography } from "@mui/material";
+import git from "../../assets/github.svg";
 
 const pages = ["Sobre mi", "Habidades", "Proyectos", "Contacto"];
 
@@ -17,6 +19,7 @@ const NavBar = () => {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+  console.log(redes);
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -65,7 +68,7 @@ const NavBar = () => {
             React || Redux || JavaScript || nodeJS || HTML || CSS
           </Typography>
         </Box>
-
+        <CardMedia variant="img" src={git} sx={{ width: 50, height: 50 }} />
         <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
           <IconButton
             size="large"
@@ -129,6 +132,24 @@ const NavBar = () => {
             ))}
           </Box>
         </Box>
+
+        {/* <Box
+          display="flex"
+          flexDirection="row"
+          backgroundColor="white"
+          alignItems="center"
+        >
+          {redes.map((red) => (
+            <Box key={red.id} sx={{ width: 150 }}>
+              <CardMedia
+                variant="img"
+                src={red.img}
+                alt={red.name}
+                sx={{ width: 50, height: 50 }}
+              />
+            </Box>
+          ))}
+        </Box> */}
       </Toolbar>
     </AppBar>
   );

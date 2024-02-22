@@ -6,18 +6,18 @@ const redes = [
     {
         id: 0,
         name: "git",
-        img: git
+        img: git,
     },
     {
         id: 1,
         name: "instagram",
-        img: instagram
+        img: instagram,
     },
     {
         id: 2,
         name: "linkedin",
-        img: linkedin
+        img: linkedin,
     }
-];
+]
 
 export default redes;

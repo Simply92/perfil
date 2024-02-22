@@ -8,20 +8,32 @@ const About = () => {
       sx={{
         background: "linear-gradient(var(--black),var(--black2))",
         overflow: "hidden",
+        // padding: "14rem 0 12rem",
         padding: "14rem 0 12rem",
         position: "relative",
+        height: "100%",
       }}
     >
       <Box
+        // sx={{
+        //   overflow: "hidden",
+        //   opacity: ".1",
+        //   left: "50%",
+        //   minHeight: "100%",
+        //   minWidth: "100%",
+        //   position: "absolute",
+        //   top: "50%",
+        //   transform: "translate(-50%,-55%)",
+        // }}
         sx={{
           overflow: "hidden",
           opacity: ".1",
-          left: "50%",
-          minHeight: "100%",
-          minWidth: "100%",
           position: "absolute",
-          top: "50%",
+          minWidth: "100%",
+          minHeight: "100%",
           transform: "translate(-50%,-55%)",
+          top: "50%",
+          left: "50%",
         }}
       >
         <ReactPlayer
