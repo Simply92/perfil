@@ -46,9 +46,11 @@ const About = () => {
         >
           Full Stack Developer
         </Typography>
-        <Typography>
-          Hola, mi nombre es Pedro Matias Gonzalez, soy desarrollador full stack
-          de Argentina, Buenos Aires.
+        <Typography variant="body1" sx={{ padding: "50px 400px 0px 440px" }}>
+          Hola, mi nombre es Pedro Matias Gonzalez, soy de Argentina, Buenos
+          Aires y soy desarrollador web full stack recientemente graduado en
+          HENRY, estoy en constante aprendizaje mejorando mis habilidades, lo
+          que me permite ir creciendo de manera profesional.
         </Typography>
       </Box>
     </Box>
