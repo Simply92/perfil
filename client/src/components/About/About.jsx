@@ -7,9 +7,6 @@ const About = () => {
     <Box
       sx={{
         background: "linear-gradient(var(--black),var(--black2))",
-        overflow: "hidden",
-        // padding: "14rem 0 12rem",
-        padding: "14rem 0 12rem",
         position: "relative",
         height: "100%",
       }}
@@ -26,14 +23,9 @@ const About = () => {
         //   transform: "translate(-50%,-55%)",
         // }}
         sx={{
-          overflow: "hidden",
-          opacity: ".1",
-          position: "absolute",
+          opacity: ".2",
           minWidth: "100%",
           minHeight: "100%",
-          transform: "translate(-50%,-55%)",
-          top: "50%",
-          left: "50%",
         }}
       >
         <ReactPlayer
@@ -46,9 +38,15 @@ const About = () => {
           loop
         />
       </Box>
-      <Box display="flex" flexDirection="column" alignItems="center">
+      <Box
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        position="absolute"
+        top="30%"
+      >
         <Typography
-          variant="h5"
+          variant="h2"
           sx={{
             fontFamily: "monospace",
             fontWeight: 700,
@@ -58,7 +56,7 @@ const About = () => {
         >
           Full Stack Developer
         </Typography>
-        <Typography variant="body1" sx={{ padding: "50px 400px 0px 440px" }}>
+        <Typography variant="h4" sx={{ padding: "50px 400px 0px 440px" }}>
           Hola, mi nombre es Pedro Matias Gonzalez, soy de Argentina, Buenos
           Aires y soy desarrollador web full stack recientemente graduado en
           HENRY, estoy en constante aprendizaje mejorando mis habilidades, lo

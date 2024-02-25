@@ -1,6 +1,6 @@
 import html from "../assets/html5.svg"
 import css from "../assets/css.svg";
-import express from "../assets/Express.js_light.svg";
+import express from "../assets/Express.js_dark.svg";
 import javaScript from "../assets/javascript.svg";
 import materiasUI from "../assets/materialui.svg";
 import nodejs from "../assets/nodejs.svg";

@@ -1,7 +1,12 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const Contact = () => {
-  return <Typography>Contacto</Typography>;
+  return (
+    <Box>
+      <Typography>Contacto</Typography>
+      <Typography></Typography>
+    </Box>
+  );
 };
 
 export default Contact;

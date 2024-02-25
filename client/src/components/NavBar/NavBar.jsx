@@ -36,38 +36,21 @@ const NavBar = () => {
           height: 80,
         }}
       >
-        <Box
-          display="flex"
-          flexDirection="column"
-          sx={{ mr: { xs: 14, sm: 2 }, ml: { sm: 5 } }}
+        <Typography
+          variant="h5"
+          noWrap
+          sx={{
+            ml: 4,
+            fontFamily: "monospace",
+            fontWeight: 700,
+            letterSpacing: { xs: 0.6, sm: 2 },
+            color: "inherit",
+            textDecoration: "none",
+          }}
         >
-          <Typography
-            variant="h5"
-            noWrap
-            sx={{
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: { xs: 0.6, sm: 2 },
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            Pedro Matias Gonzalez
-          </Typography>
-          <Typography
-            variant="body1"
-            noWrap
-            sx={{
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: { xs: 0.6, sm: 2 },
-              color: "#4FCE58",
-              textDecoration: "none",
-            }}
-          >
-            React || Redux || JavaScript || nodeJS || HTML || CSS
-          </Typography>
-        </Box>
+          Pedro Matias Gonzalez
+        </Typography>
+
         <CardMedia variant="img" src={git} sx={{ width: 50, height: 50 }} />
         <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
           <IconButton
