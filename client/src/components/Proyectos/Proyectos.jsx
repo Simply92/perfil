@@ -46,8 +46,16 @@ const Proyectos = () => {
   ];
 
   return (
-    <Box display="flex" flexDirection="column" alignItems="center">
-      <Typography variant="h3">PROYECTOS</Typography>
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      backgroundColor="#006666"
+      sx={{ mt: -2 }}
+    >
+      <Typography variant="h3" color="black" sx={{ fontSize: { xxs: 20 } }}>
+        PROYECTOS
+      </Typography>
       <Box>
         {proyects.map((proyect) => (
           <Card
@@ -55,11 +63,13 @@ const Proyectos = () => {
             sx={{
               padding: 2,
               mt: 5,
+              mb: 5,
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
               border: "solid 1px",
               borderRadius: 3,
+              minHeight: 400,
             }}
           >
             <Link to={proyect.url}>
@@ -68,7 +78,8 @@ const Proyectos = () => {
                 src={proyect.image}
                 alt={proyect.name}
                 sx={{
-                  width: { xxs: "140px", sm: "150px" },
+                  width: { xxs: "110px", sm: "150px" },
+                  height: { xxs: "110px", sm: "150px" },
                   cursor: "pointer",
                 }}
               />

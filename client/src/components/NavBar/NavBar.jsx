@@ -9,7 +9,6 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import redes from "../../utils/redes";
 import { CardMedia, Typography } from "@mui/material";
-import git from "../../assets/github.svg";
 
 const pages = ["Sobre mi", "Habidades", "Proyectos", "Contacto"];
 
@@ -26,13 +25,18 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar>
+    <AppBar
+      sx={{
+        background: "#6b6b6b",
+        alignItems: { xxs: "flex-start", md: "center" },
+      }}
+    >
       <Toolbar
         disableGutters
         sx={{
-          flexDirection: { xs: "row-reverse", sm: "row" },
-          justifyContent: "space-between",
-          backgroundColor: "black",
+          flexDirection: { xxs: "row-reverse", sm: "row" },
+          justifyContent: { xs: "center", md: "space-between" },
+          backgroundColor: "#6b6b6b",
           height: 80,
         }}
       >
@@ -40,10 +44,11 @@ const NavBar = () => {
           variant="h5"
           noWrap
           sx={{
-            ml: 4,
-            fontFamily: "monospace",
+            display: "flex",
+            justifyContent: "flex-start",
+            ml: { xxs: 1, sm: 1, md: 4 },
             fontWeight: 700,
-            letterSpacing: { xs: 0.6, sm: 2 },
+            letterSpacing: { xxs: 0, sm: 1 },
             color: "inherit",
             textDecoration: "none",
           }}
@@ -51,8 +56,7 @@ const NavBar = () => {
           Pedro Matias Gonzalez
         </Typography>
 
-        <CardMedia variant="img" src={git} sx={{ width: 50, height: 50 }} />
-        <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
+        <Box sx={{ flexGrow: 1, display: { xxs: "flex", sm: "none" } }}>
           <IconButton
             size="large"
             aria-label="account of current user"
@@ -78,7 +82,7 @@ const NavBar = () => {
             open={Boolean(anchorElNav)}
             onClose={handleCloseNavMenu}
             sx={{
-              display: { xs: "block", md: "none" },
+              display: { xxs: "block", md: "none" },
             }}
           >
             {pages.map((page) => (
@@ -92,11 +96,11 @@ const NavBar = () => {
           <Box
             sx={{
               display: {
-                xs: "none",
+                xxs: "none",
                 sm: "flex",
               },
               justifyContent: "space-evenly",
-              width: { md: 500 },
+              width: { xxs: 350, sm: 400, md: 500 },
             }}
           >
             {pages.map((page) => (
@@ -116,23 +120,20 @@ const NavBar = () => {
           </Box>
         </Box>
 
-        {/* <Box
-          display="flex"
-          flexDirection="row"
-          backgroundColor="white"
-          alignItems="center"
+        <Box
+          sx={{ display: { xxs: "none", md: "flex" }, flexDirection: "row" }}
         >
           {redes.map((red) => (
-            <Box key={red.id} sx={{ width: 150 }}>
+            <Box key={red.id} sx={{ padding: 1 }}>
               <CardMedia
-                variant="img"
+                component="img"
                 src={red.img}
                 alt={red.name}
-                sx={{ width: 50, height: 50 }}
+                sx={{ width: 30 }}
               />
             </Box>
           ))}
-        </Box> */}
+        </Box>
       </Toolbar>
     </AppBar>
   );
