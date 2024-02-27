@@ -17,7 +17,7 @@ const Skills = () => {
       <Typography
         variant="h3"
         color="black"
-        sx={{ mt: 5, fontSize: { xxs: 20 } }}
+        sx={{ mt: 5, fontSize: { xxs: 20, md: 50 } }}
       >
         TECNOLOGIAS
       </Typography>
@@ -26,7 +26,7 @@ const Skills = () => {
         alignItems="center"
         flexWrap="wrap"
         justifyContent="center"
-        sx={{ width: { xxs: 100, md: 400 }, height: "auto", mt: 2, mb: 5 }}
+        sx={{ width: { xxs: 100, md: 500 }, height: "auto", mt: 2, mb: 5 }}
       >
         {logos.map((logo) => (
           <Box key={logo.id} sx={{ padding: { xxs: 1, md: 4 } }}>

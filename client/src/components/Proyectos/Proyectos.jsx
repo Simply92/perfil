@@ -53,7 +53,11 @@ const Proyectos = () => {
       backgroundColor="#006666"
       sx={{ mt: -2 }}
     >
-      <Typography variant="h3" color="black" sx={{ fontSize: { xxs: 20 } }}>
+      <Typography
+        variant="h3"
+        color="black"
+        sx={{ fontSize: { xxs: 20, md: 50 } }}
+      >
         PROYECTOS
       </Typography>
       <Box>
@@ -69,7 +73,7 @@ const Proyectos = () => {
               alignItems: "center",
               border: "solid 1px",
               borderRadius: 3,
-              minHeight: 400,
+              // minHeight: 400,
             }}
           >
             <Link to={proyect.url}>
@@ -79,7 +83,7 @@ const Proyectos = () => {
                 alt={proyect.name}
                 sx={{
                   width: { xxs: "110px", sm: "150px" },
-                  height: { xxs: "110px", sm: "150px" },
+                  height: { xxs: "110px", sm: "auto" },
                   cursor: "pointer",
                 }}
               />

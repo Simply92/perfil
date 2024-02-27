@@ -45,7 +45,7 @@ const About = () => {
             color: "#4FCE58",
             textDecoration: "none",
             fontSize: { xxs: 20, md: 50 },
-            mt: { xxs: -6, md: 0 },
+            mt: { xxs: -6, md: -10 },
           }}
         >
           Full Stack Developer
