@@ -50,12 +50,12 @@ const Proyectos = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      backgroundColor="#006666"
+      backgroundColor="black"
       sx={{ mt: -2 }}
     >
       <Typography
         variant="h3"
-        color="black"
+        color="#006666"
         sx={{ fontSize: { xxs: 20, md: 50 } }}
       >
         PROYECTOS

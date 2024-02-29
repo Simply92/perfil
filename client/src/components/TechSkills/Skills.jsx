@@ -10,13 +10,13 @@ const Skills = () => {
       sx={{
         mb: 2,
         mt: -1,
-        background: "#006666",
+        background: "black",
         width: "100%",
       }}
     >
       <Typography
         variant="h3"
-        color="black"
+        color="#006666"
         sx={{ mt: 5, fontSize: { xxs: 20, md: 50 } }}
       >
         TECNOLOGIAS

@@ -9,6 +9,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import redes from "../../utils/redes";
 import { CardMedia, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const pages = ["Sobre mi", "Habidades", "Proyectos", "Contacto"];
 
@@ -125,12 +126,14 @@ const NavBar = () => {
         >
           {redes.map((red) => (
             <Box key={red.id} sx={{ padding: 1 }}>
-              <CardMedia
-                component="img"
-                src={red.img}
-                alt={red.name}
-                sx={{ width: 30 }}
-              />
+              <Link to={red.url}>
+                <CardMedia
+                  component="img"
+                  src={red.img}
+                  alt={red.name}
+                  sx={{ width: 30, cursor: "pointer" }}
+                />
+              </Link>
             </Box>
           ))}
         </Box>
