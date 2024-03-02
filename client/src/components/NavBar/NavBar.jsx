@@ -11,7 +11,7 @@ import redes from "../../utils/redes";
 import { CardMedia, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const pages = ["Sobre mi", "Habidades", "Proyectos", "Contacto"];
+const pages = ["Sobre mi", "Tecnologias", "Proyectos", "Contacto"];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -19,10 +19,15 @@ const NavBar = () => {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  console.log(redes);
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const handleScrollTo = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+    handleCloseNavMenu();
   };
 
   return (
@@ -87,7 +92,12 @@ const NavBar = () => {
             }}
           >
             {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
+              <MenuItem
+                key={page}
+                onClick={() =>
+                  handleScrollTo(page.replace(/\s+/g, "-").toLowerCase())
+                }
+              >
                 <Typography textAlign="center">{page}</Typography>
               </MenuItem>
             ))}
@@ -107,7 +117,10 @@ const NavBar = () => {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                // onClick={handleCloseNavMenu}
+                onClick={() =>
+                  handleScrollTo(page.replace(/\s+/g, "-").toLowerCase())
+                }
                 sx={{
                   my: 2,
                   color: "white",
