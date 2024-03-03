@@ -1,47 +1,24 @@
-import { Box, CardMedia, Typography } from "@mui/material";
 import logos from "../../utils/logos";
 
 const Skills = () => {
   return (
-    <Box
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      sx={{
-        mb: 2,
-        mt: -1,
-        background: "black",
-        width: "100%",
-      }}
+    <div
+      name="skills"
+      className="flex flex-col items-center bg-[#0a192f] text-gray-300"
     >
-      <Typography
-        variant="h3"
-        color="#006666"
-        sx={{ mt: 5, fontSize: { xxs: 20, md: 50 } }}
-      >
-        TECNOLOGIAS
-      </Typography>
-      <Box
-        display="flex"
-        alignItems="center"
-        flexWrap="wrap"
-        justifyContent="center"
-        sx={{ width: { xxs: 100, md: 500 }, height: "auto", mt: 2, mb: 5 }}
-      >
+      <h3 className="text-4xl font-bold inline border-b-4">TECNOLOGIAS</h3>
+      <div className="flex flex-row flex-wrap justify-center w-[600px] text-center py-8">
         {logos.map((logo) => (
-          <Box key={logo.id} sx={{ padding: { xxs: 1, md: 4 } }}>
-            <CardMedia
-              component="img"
-              src={logo.img}
-              alt={logo.name}
-              sx={{
-                width: { xxs: 30, md: 100 },
-              }}
-            />
-          </Box>
+          <div
+            key={logo.id}
+            className="flex flex-col justify-center w-[150px]  ml-2 mt-2 px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+          >
+            <img src={logo.img} alt={logo.name} className="w-20 mx-auto" />
+            <p className="my-4">{logo.name}</p>
+          </div>
         ))}
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 };
 

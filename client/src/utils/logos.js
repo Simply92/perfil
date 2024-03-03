@@ -9,62 +9,68 @@ import react from "../assets/react.svg";
 import redux from  "../assets/redux.svg";
 import sequelize from "../assets/sequelize.svg";
 import visual from "../assets/vscode.svg"
+import tailwind from "../assets/tailwind.png"
 
 const logos = [
 {
     id: 0,
-    name: "html",
+    name: "HTML",
     img: html, 
 },
 {
     id: 1,
-    name: "css",
+    name: "CSS",
     img: css,
 },
 {
     id:2,
-    name: "javaScript",
+    name: "JAVASCRIPT",
     img: javaScript,
 },
 {
     id:3,
-    name: "react",
+    name: "REACT",
     img: react
 },
 {
     id:4,
-    name: "redux",
+    name: "REDUX",
     img: redux
 },
 {
     id:5,
-    name: "materialUI",
+    name: "MATERIAL UI",
     img: materiasUI
 },
 {
     id:6,
-    name: "nodeJS",
+    name: "NODEJS",
     img: nodejs
 },
 {
     id: 7,
-    name: "express",
+    name: "EXPRESS",
     img: express
 },
 {
     id:8,
-    name: "sequelize",
+    name: "SEQUELIZE",
     img: sequelize
 },
 {
     id:9,
-    name: "postgresql",
+    name: "POSTGRESQL",
     img: postgresql
 },
 {
     id:10,
-    name: "visualStudio",
+    name: "VISUAL STUDIO",
     img: visual
+},
+{
+    id:11,
+    name: "TAILWIND",
+    img: tailwind
 }
 ]
 

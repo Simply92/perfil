@@ -1,59 +1,37 @@
-import { Box, CardMedia, Typography } from "@mui/material";
 import redes from "../../utils/redes";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <Box
-      display="flex"
-      justifyContent="center"
-      flexDirection="column"
-      alignItems="center"
-      width="100%"
-      padding="40px"
+    <div
+      name="contact"
+      className="w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center p-4"
     >
-      <Typography variant="h2">Contacto</Typography>
-      <Box
-        display="flex"
-        justifyContent="center"
-        flexDirection="row"
-        width="100%"
-      >
-        <Box
-          display="flex"
-          flexDirection="column"
-          width="50%"
-          alignItems="center"
-        >
-          <Typography variant="h4">Redes</Typography>
-          <Box display="flex" flexDirection="row">
+      <h2 className="text-4xl font-bold inline border-b-4 text-gray-300">
+        CONTACTO
+      </h2>
+      <div className="flex justify-center flex-row w-full">
+        <div className="flex flex-col w-1/2 items-center py-10">
+          <h4 className="text-2xl text-gray-300">Redes</h4>
+          <div className="flex flex-row">
             {redes.map((red) => (
-              <Box key={red.id} sx={{ padding: 2 }}>
+              <div key={red.id} className="p-4">
                 <Link to={red.url}>
-                  <CardMedia
-                    component="img"
-                    src={red.img}
-                    alt={red.name}
-                    sx={{ width: 30 }}
-                  />
+                  <img src={red.img} alt={red.name} className="w-24" />
                 </Link>
-              </Box>
+              </div>
             ))}
-          </Box>
-        </Box>
-        <Box
-          display="flex"
-          justifyContent="center"
-          flexDirection="column"
-          alignItems="center"
-          width="50%"
-        >
-          <Typography variant="h6">Tel: +5491159722508</Typography>
-          <Typography variant="h6">E-mail: pedrouner92@gmail.com</Typography>
-          <Typography variant="h6">Buenos Aires, Argentina</Typography>
-        </Box>
-      </Box>
-    </Box>
+          </div>
+        </div>
+        <div className="flex justify-center flex-col items-center w-1/2">
+          <h6 className="text-2xl text-gray-300">Tel: +5491159722508</h6>
+          <h6 className="text-2xl text-gray-300">
+            E-mail: pedrouner92@gmail.com
+          </h6>
+          <h6 className="text-2xl text-gray-300">Buenos Aires, Argentina</h6>
+        </div>
+      </div>
+    </div>
   );
 };
 
