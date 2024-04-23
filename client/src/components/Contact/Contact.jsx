@@ -2,14 +2,49 @@ import redes from "../../utils/redes";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
+  const inputStyle =
+    "p-2 bg-transparent border-4 border-solid text-white text-xl rounded-lg font-bold placeholder:text-white";
+  const labelStyle = "font-bold text-white text-2xl";
+  const formStyle = "px-2 py-8 flex flex-row items-center gap-8";
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center p-4"
+      className="w-full h-screen bg-[#0a192f] flex flex-col items-center justify-center p-4"
     >
-      <h2 className="text-4xl font-bold inline border-b-4 text-gray-300">
+      <h2 className="text-4xl font-bold inline border-b-4 text-gray-300 mt-28">
         CONTACTO
       </h2>
+      <form className="flex flex-col py-10 md:w-1/2">
+        <div className={formStyle}>
+          <label className={labelStyle} htmlFor="name">
+            Nombre:
+          </label>
+          <input
+            className={inputStyle}
+            type="text"
+            placeholder="Nombre completo"
+          />
+        </div>
+        <div className={formStyle}>
+          <label htmlFor="email" className="font-bold text-white text-2xl mr-7">
+            Email:
+          </label>
+          <input
+            className={inputStyle}
+            type="email"
+            placeholder="Email de Registro"
+          />
+        </div>
+        <div className={formStyle}>
+          <label className={labelStyle}>Mensaje:</label>
+          <textarea
+            className={inputStyle}
+            cols="30"
+            rows="10"
+            placeholder="Mensaje..."
+          />
+        </div>
+      </form>
       <div className="flex justify-center flex-row w-full">
         <div className="flex flex-col w-1/2 items-center py-10">
           <h4 className="text-2xl text-gray-300">Redes</h4>

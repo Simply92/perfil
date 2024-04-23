@@ -1,9 +1,8 @@
 import NavBar from "./components/NavBar/NavBar";
 import About from "./components/About/About";
-import Proyectos from "./components/Proyectos/Proyectos";
+import Proyects from "./components/Proyects/Proyects";
 import Skills from "./components/TechSkills/Skills";
 import Contact from "./components/Contact/Contact";
-import "./App.css";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
 
       <Skills />
 
-      <Proyectos />
+      <Proyects />
 
       <Contact />
     </div>
