@@ -2,7 +2,7 @@ const Contact = () => {
   const inputStyle =
     "p-2 bg-transparent border-4 border-solid text-white text-xl rounded-lg font-bold placeholder:text-white";
   const labelStyle = "font-bold text-white text-2xl";
-  const formStyle = "px-2 py-8 flex flex-row items-center gap-8";
+  const formStyle = "py-2 flex flex-col gap-2";
   return (
     <div
       name="contact"
@@ -14,7 +14,7 @@ const Contact = () => {
       <form
         action="https://getform.io/f/nbvvzvmb"
         method="POST"
-        className="flex flex-col py-10 md:w-1/2 items-center"
+        className="flex flex-col py-10 md:w-1/2"
       >
         <div className={formStyle}>
           <label className={labelStyle} htmlFor="name">
@@ -50,7 +50,7 @@ const Contact = () => {
         </div>
         <input
           type="submit"
-          className="bg-indigo-600 w-1/3 p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-colors"
+          className="bg-indigo-600 my-4 p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-colors rounded-lg"
           value="Enviar"
         />
       </form>
