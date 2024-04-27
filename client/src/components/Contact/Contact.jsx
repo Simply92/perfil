@@ -1,4 +1,5 @@
 const Contact = () => {
+  const KEY = import.meta.env.VITE_API_KEY_FORM;
   const inputStyle =
     "p-2 bg-transparent border-4 border-solid text-white text-xl rounded-lg font-bold placeholder:text-white";
   const labelStyle = "font-bold text-white text-2xl";
@@ -6,16 +7,12 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-full bg-[#0a192f] flex flex-col items-center justify-center p-4"
+      className="w-full md:h-full h-screen bg-[#0a192f] flex flex-col items-center justify-center p-4 min-w-[500px]"
     >
-      <h2 className="text-4xl font-bold inline border-b-4 text-gray-300 mt-28">
+      <h2 className="text-4xl font-bold inline border-b-4 text-gray-300 md:mt-28 mt-10">
         CONTACTO
       </h2>
-      <form
-        action="https://getform.io/f/nbvvzvmb"
-        method="POST"
-        className="flex flex-col py-10 md:w-1/2"
-      >
+      <form action={KEY} method="POST" className="flex flex-col py-10 md:w-1/2">
         <div className={formStyle}>
           <label className={labelStyle} htmlFor="name">
             Nombre:

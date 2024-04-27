@@ -4,6 +4,8 @@ import Proyect3 from "../assets/RickAndMorty.png";
 import Proyect4 from "../assets/huella.jpg"
 import Proyect5 from "../assets/LogoGastos.png"
 import Proyect6 from "../assets/logoClima.png"
+import Proyect7 from "../assets/Guitarras.jpg"
+import Proyect8 from "../assets/Calorias.png"
 
 export const proyects = [
     {
@@ -59,5 +61,23 @@ export const proyects = [
       git: "https://github.com/Simply92/AppClima",
       descripcion:
         "Aplicacion util para consultar el clima, cuenta con un formulario donde se escribe la ciudad deseada y seleccionando el pais fue desarrollado con vite, react y TypeScript",
+    },
+    {
+      id: 6,
+      name: "App Tienda",
+      image: Proyect7,
+      url: "https://app-carrito-ts.vercel.app/",
+      git: "https://github.com/Simply92/appCarritoTS",
+      descripcion:
+        "App de tienda con carrito de compras, desarrollado con React, vite y TypeScript",
+    },
+    {
+      id: 7,
+      name: "App Calorias",
+      image: Proyect8,
+      url: "https://app-calorias.vercel.app/",
+      git: "https://github.com/Simply92/AppCalorias",
+      descripcion:
+        "App de tienda con carrito de compras, desarrollado con React, vite y TypeScript",
     },
   ];
