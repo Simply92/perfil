@@ -9,7 +9,7 @@ const Skills = () => {
       <h3 className="text-4xl font-bold inline border-b-4 md:mt-28 mt-10">
         TECNOLOGIAS
       </h3>
-      <div className="flex flex-row flex-wrap justify-center md:w-[600px] w-[400px] text-center py-8">
+      <div className="flex flex-row flex-wrap justify-center md:w-[600px] w-[400px] text-center py-8 md:gap-4">
         {logos.map((logo) => (
           <div
             key={logo.id}
