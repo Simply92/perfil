@@ -9,10 +9,10 @@ const About = () => {
           Full Stack Developer
         </h2>
         <h3 className="font-bold py-2 text-xl md:text-4xl md:max-w-[1000px]">
-          Hola, mi nombre es Pedro Matias Gonzalez, soy de Argentina, Buenos
-          Aires y soy desarrollador full stack, estoy en constante aprendizaje
-          mejorando mis habilidades, lo que me permite ir creciendo de manera
-          profesional.
+          Hola, mi nombre es Pedro Matias Gonzalez, soy de Buenos Aires,
+          Argentina y soy desarrollador full stack, estoy en constante
+          aprendizaje mejorando mis habilidades, lo que me permite ir creciendo
+          de manera profesional.
         </h3>
       </div>
     </div>
