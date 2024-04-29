@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       backgroundImage:{
-        'fondo': "url('/fondo-about.avif')"
-      }
+        'fondo': "url('/cover2.png')"
+      },
     },
   },
   plugins: [],
