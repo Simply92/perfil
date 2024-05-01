@@ -6,6 +6,7 @@ import Proyect5 from "../assets/LogoGastos.png"
 import Proyect6 from "../assets/logoClima.png"
 import Proyect7 from "../assets/Guitarras.jpg"
 import Proyect8 from "../assets/Calorias.png"
+import Proyect9 from "../assets/crypto.jpg"
 
 export const proyects = [
     {
@@ -69,7 +70,7 @@ export const proyects = [
       url: "https://app-carrito-ts.vercel.app/",
       git: "https://github.com/Simply92/appCarritoTS",
       descripcion:
-        "App de tienda con carrito de compras, desarrollado con React, vite y TypeScript",
+        "",
     },
     {
       id: 7,
@@ -78,6 +79,15 @@ export const proyects = [
       url: "https://app-calorias.vercel.app/",
       git: "https://github.com/Simply92/AppCalorias",
       descripcion:
-        "App de tienda con carrito de compras, desarrollado con React, vite y TypeScript",
+        "",
+    },
+    {
+      id: 8,
+      name: "App cotizador",
+      image: Proyect9,
+      url: "https://app-cotizador.vercel.app/",
+      git: "https://github.com/Simply92/AppCotizador",
+      descripcion:
+        "",
     },
   ];
