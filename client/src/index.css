@@ -15,8 +15,9 @@
         font-weight: 600;
     }
     li:hover{
-        color:blue;
-    }
+         --tw-text-opacity: 1;
+    color: rgb(74 222 128 / var(--tw-text-opacity));
+    } 
 }
 
 .content-div {
