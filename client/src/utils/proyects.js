@@ -6,7 +6,7 @@ import Proyect5 from "../assets/LogoGastos.png"
 import Proyect6 from "../assets/logoClima.png"
 import Proyect7 from "../assets/Guitarras.jpg"
 import Proyect8 from "../assets/Calorias.png"
-import Proyect9 from "../assets/crypto.jpg"
+import Proyect9 from "../assets/bitcoin.jpg"
 
 export const proyects = [
     {

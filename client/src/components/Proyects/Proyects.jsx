@@ -22,7 +22,6 @@ const Proyects = () => {
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
                 overflow: "hidden",
-                backgroundColor: "white",
               }}
               className="shadow-lg shadow-[#26303d] group container rounded-md 
               flex justify-center text-center items-center content-div bg-white"
