@@ -7,6 +7,7 @@ import Proyect6 from "../assets/logoClima.png"
 import Proyect7 from "../assets/Guitarras.jpg"
 import Proyect8 from "../assets/Calorias.png"
 import Proyect9 from "../assets/bitcoin.jpg"
+import Proyect10 from "../assets/quiosco.svg"
 
 export const proyects = [
     {
@@ -87,6 +88,15 @@ export const proyects = [
       image: Proyect9,
       url: "https://app-cotizador.vercel.app/",
       git: "https://github.com/Simply92/AppCotizador",
+      descripcion:
+        "",
+    },
+    {
+      id: 8,
+      name: "App quiosco",
+      image: Proyect10,
+      url: "https://quiosco-next-opal.vercel.app/order/cafe",
+      git: "https://github.com/Simply92/quiosco-next",
       descripcion:
         "",
     },
