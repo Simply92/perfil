@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 mb-52">
+    <div className="fixed w-full h-14 flex justify-between items-center px-4 bg-primary text-gray-300 mb-52">
       <div>
         <h1 className="md:text-4xl text-xl text-green-400">
           Pedro Matias Gonzalez
@@ -42,33 +42,21 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-primary flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">
-          {" "}
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            Sobre mi
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          {" "}
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Tecnologias
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          {" "}
-          <Link onClick={handleClick} to="proyect" smooth={true} duration={500}>
-            Proyectos
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          {" "}
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contacto
-          </Link>
-        </li>
+        {navPages.map((item, i) => (
+          <li key={i} className="py-6 text-4xl">
+            <Link
+              onClick={handleClick}
+              to={item.to}
+              smooth={true}
+              duration={500}
+            >
+              {item.text}
+            </Link>
+          </li>
+        ))}
       </ul>
 
       {/* Social icons */}

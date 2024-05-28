@@ -19,6 +19,12 @@ export default {
       backgroundImage:{
         'fondo': "url('/cover2.png')"
       },
+      backgroundColor: {
+        'primary': "#0a192f"
+      },
+      fontFamily:{
+        'typografy': ["Inter Tight", "sans-serif"]
+      }
     },
   },
   plugins: [],

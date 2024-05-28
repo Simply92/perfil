@@ -1,5 +1,37 @@
+import { useForm } from "react-hook-form";
+import Error from "../Error";
+import axios from "axios";
+import Swal from "sweetalert2";
+
 const Contact = () => {
-  const KEY = import.meta.env.VITE_API_KEY_FORM;
+
+  const { register, handleSubmit, formState: { errors } } = useForm()
+
+  const menssage = async (data) => {
+    const KEY = import.meta.env.VITE_API_KEY_FORM;
+    try {
+      const response = await axios.post(KEY, data, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      if (response.status !== 200) {
+        throw new Error('Error en el envío del formulario');
+      }
+      Swal.fire({
+        text: 'Formulario enviado con éxito',
+        icon: "success"
+      })
+    } catch (error) {
+      console.error('Error:', error);
+      Swal.fire({
+        title: "Error!",
+        text: "Hubo un error al enviar el formulario. Inténtelo de nuevo.",
+        icon: "error"
+      });
+    }
+  }
+
   const inputStyle =
     "p-2 bg-transparent border-4 border-solid text-white text-xl rounded-lg font-bold placeholder:text-white";
   const labelStyle = "font-bold text-white text-2xl";
@@ -7,12 +39,15 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full md:h-full h-screen bg-[#0a192f] flex flex-col items-center justify-center p-4 min-w-[500px]"
+      className="w-full md:h-full h-screen bg-primary flex flex-col items-center justify-center p-4 min-w-[500px]"
     >
       <h2 className="text-4xl font-bold inline border-b-4 text-gray-300 md:mt-28 mt-10">
         CONTACTO
       </h2>
-      <form action={KEY} method="POST" className="flex flex-col py-10 md:w-1/2">
+      <form
+        className="flex flex-col py-10 md:w-1/2"
+        onSubmit={handleSubmit(menssage)}
+      >
         <div className={formStyle}>
           <label className={labelStyle} htmlFor="name">
             Nombre:
@@ -22,7 +57,13 @@ const Contact = () => {
             className={inputStyle}
             type="text"
             placeholder="Nombre completo"
+            {...register('name', {
+              required: 'El nombre es obligatorio'
+            })}
           />
+          {errors.name && (
+            <Error>{errors.name?.message}</Error>
+          )}
         </div>
         <div className={formStyle}>
           <label htmlFor="email" className="font-bold text-white text-2xl mr-7">
@@ -33,7 +74,17 @@ const Contact = () => {
             className={inputStyle}
             type="email"
             placeholder="Email de Registro"
+            {...register("email", {
+              required: "El Email es obligatorio",
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: 'Email No Válido'
+              }
+            })}
           />
+          {errors.email && (
+            <Error>{errors.email?.message}</Error>
+          )}
         </div>
         <div className={formStyle}>
           <label className={labelStyle}>Mensaje:</label>
@@ -43,7 +94,13 @@ const Contact = () => {
             cols="30"
             rows="10"
             placeholder="Mensaje..."
+            {...register('message', {
+              required: 'Este campo es obligatorio'
+            })}
           />
+          {errors.message && (
+            <Error>{errors.message?.message}</Error>
+          )}
         </div>
         <input
           type="submit"

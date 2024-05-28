@@ -1,9 +1,9 @@
-import redes from "../../utils/redes";
+import redes from "../../utils/networks";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#0a192f] flex flex-col items-center justify-center p-4 min-w-[500px]">
+    <div className="w-full bg-primary flex flex-col items-center justify-center p-4 min-w-[500px]">
       <div className="flex justify-center md:flex-row flex-col w-full">
         <div className="flex flex-col md:w-1/2 items-center py-10">
           <h4 className="text-xl text-gray-300">Redes</h4>
