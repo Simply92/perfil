@@ -41,9 +41,9 @@ const Contact = () => {
       name="contact"
       className="w-full md:h-full h-screen bg-primary flex flex-col items-center justify-center p-4 min-w-[500px]"
     >
-      <h2 className="text-4xl font-bold inline border-b-4 text-gray-300 md:mt-28 mt-10">
+      <h3>
         CONTACTO
-      </h2>
+      </h3>
       <form
         className="flex flex-col py-10 md:w-1/2"
         onSubmit={handleSubmit(menssage)}

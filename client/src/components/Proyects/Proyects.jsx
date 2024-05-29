@@ -5,11 +5,11 @@ const Proyects = () => {
   return (
     <div
       name="proyect"
-      className="w-full md:h-screen text-gray-300 bg-[#0a192f] min-w-[500px]"
+      className="w-full md:h-auto bg-primary min-w-[500px]"
     >
-      <div className="md:max-w-[1500px] mx-auto p-4 flex flex-col w-full md:h-screen">
+      <div className="md:max-w-[1500px] mx-auto p-4 flex flex-col">
         <div className="flex justify-center items-center pb-8">
-          <h3 className="text-4xl font-bold inline border-b-4 text-gray-300 md:mt-28">
+          <h3>
             PROYECTOS
           </h3>
         </div>
