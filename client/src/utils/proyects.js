@@ -32,8 +32,8 @@ export const proyects = [
       id: 2,
       name: "Rick and Morty",
       image: Proyect3,
-      url: "https://rick-and-morty-simply92.vercel.app/",
-      git: "https://github.com/Simply92/Frontend_rick_and_morty",
+      url: "https://ts-rick-and-morty.vercel.app/",
+      git: "https://github.com/Simply92/TS-RickAndMorty",
       descripcion:
         "Proyecto individual de curso full stack developer de Henry, se realizo con vite, React, Redux, express, postgres, NodeJS",
     },
