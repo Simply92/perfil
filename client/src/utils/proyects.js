@@ -17,7 +17,7 @@ export const proyects = [
       url: "https://pf-henry-sepia.vercel.app/",
       git: "https://github.com/gabiMaglia/PF_HENRY",
       descripcion:
-        "Proyecto final de curso full stack developer de Henry, tecnologias usadas vite, React, Redux Toolkit, Material UI, express, postgres, NodeJS ",
+        "Proyecto final full stack en Henry, e-commerce de artículos de computación cuenta los paneles de administrador, técnico y cliente. Cuenta con listado de productos, carrito de compra con su respectiva pasarela de pago que se implementó con mercado pago, entre más funcionalidades.",
     },
     {
       id: 1,
@@ -26,7 +26,7 @@ export const proyects = [
       url: "https://pi-pokemon-pedro-gonzalez.vercel.app/",
       git: "https://github.com/Simply92/Proyecto_pi_Front",
       descripcion:
-        "Proyecto individual de curso full stack developer de Henry, se realizo con vite, React, Redux, express, postgres, NodeJS",
+        "Proyecto individual full stack en Henry, web app que cuenta con la funcionalidad de buscar, filtrar y crear pokemones.",
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ export const proyects = [
       url: "https://ts-rick-and-morty.vercel.app/",
       git: "https://github.com/Simply92/TS-RickAndMorty",
       descripcion:
-        "Proyecto individual de curso full stack developer de Henry, se realizo con vite, React, Redux, express, postgres, NodeJS",
+        "Proyecto individual full stack en Henry, web app que cuenta con la funcionalidad de buscar personajes por id, agregarlos a favoritos, filtrarlos.",
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ export const proyects = [
       url: "https://app-citas-vet.vercel.app/",
       git: "https://github.com/Simply92/AppVeterinaria",
       descripcion:
-        "Proyecto de curso de Udemy, se realizo con JavaScript, vite y React",
+        "Proyecto de curso en Udemy, web app que cuenta con un formulario para agregar y modificar el listado pacientes.",
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ export const proyects = [
       url: "https://app-presupuestos-hazel.vercel.app/",
       git: "https://github.com/Simply92/AppPresupuestos",
       descripcion:
-        "Aplicacion util para calcular gastos personales partiendo de un presupuesto desarrollado con vite, react y TypeScript",
+        "Aplicación útil para calcular gastos personales partiendo de un presupuesto.",
     },
     {
       id: 5,
@@ -62,7 +62,7 @@ export const proyects = [
       url: "https://app-clima-gray.vercel.app/",
       git: "https://github.com/Simply92/AppClima",
       descripcion:
-        "Aplicacion util para consultar el clima, cuenta con un formulario donde se escribe la ciudad deseada y seleccionando el pais fue desarrollado con vite, react y TypeScript",
+        "Aplicación útil para consultar el clima, cuenta con un formulario donde se escribe la ciudad deseada y seleccionando el país.",
     },
     {
       id: 6,
@@ -71,7 +71,7 @@ export const proyects = [
       url: "https://app-carrito-ts.vercel.app/",
       git: "https://github.com/Simply92/appCarritoTS",
       descripcion:
-        "",
+        "Aplicación de tienda de guitarras con su respectivo carrito de compras",
     },
     {
       id: 7,
@@ -80,7 +80,7 @@ export const proyects = [
       url: "https://app-calorias.vercel.app/",
       git: "https://github.com/Simply92/AppCalorias",
       descripcion:
-        "",
+        "Aplicación para calcular calorías consumida y quemadas.",
     },
     {
       id: 8,
@@ -89,15 +89,15 @@ export const proyects = [
       url: "https://app-cotizador.vercel.app/",
       git: "https://github.com/Simply92/AppCotizador",
       descripcion:
-        "",
+        "Aplicación en la cual podés saber la cotización de la criptomoneda que selecciones en la moneda de tu país.",
     },
     {
-      id: 8,
-      name: "App quiosco",
+      id: 9,
+      name: "App quiosco[EN PROCESO]",
       image: Proyect10,
       url: "https://quiosco-next-opal.vercel.app/order/cafe",
       git: "https://github.com/Simply92/quiosco-next",
       descripcion:
-        "",
+        "Aplicación que cuenta con sus categorías con sus respectivos productos y podés realizar una orden, además tiene un panel administrador para sumar más productos o modificar los existentes.",
     },
   ];

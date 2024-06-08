@@ -13,40 +13,39 @@ const Proyects = () => {
             PROYECTOS
           </h3>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {proyects.map((proyect) => (
             <div
               key={proyect.id}
-              style={{
-                backgroundImage: `url(${proyect.image})`,
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                overflow: "hidden",
-              }}
-              className="shadow-lg shadow-[#26303d] group container rounded-md 
-              flex justify-center text-center items-center content-div bg-white"
+              className="shadow-lg shadow-[#26303d] flex rounded-lg bg-white"
             >
-              <div className="opacity-0 group-hover:opacity-100">
-                <span className="text-2xl font bold text-white tracking-wider ">
-                  {proyect.name}
+              <img className="h-full w-1/3 rounded-s-lg" src={proyect.image} alt={proyect.name} />
+              <div className="flex justify-center items-center group content-div w-2/3 relative">
+                <span className="font-semibold px-4 group-hover:opacity-0">
+                  {proyect.descripcion}
                 </span>
-                <div className="pt-8 text-center">
-                  <Link to={proyect.git} target="_blank">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
+                <div className="absolute opacity-0 group-hover:opacity-100">
+                  <span className="text-2xl font-bold text-white tracking-wider ">
+                    {proyect.name}
+                  </span>
+                  <div className="flex justify-center pt-4 text-center gap-4">
+                    <Link to={proyect.git} target="_blank">
+                      <button
+                        className="text-center rounded-lg p-3
                        bg-white text-gray-700 font-bold text-lg"
-                    >
-                      Codigo
-                    </button>
-                  </Link>
-                  <Link to={proyect.url} target="_blank">
-                    <button
-                      className="text-center rounded-lg px-4 py-3 m-2
+                      >
+                        Codigo
+                      </button>
+                    </Link>
+                    <Link to={proyect.url} target="_blank">
+                      <button
+                        className="text-center rounded-lg p-3
                        bg-white text-gray-700 font-bold text-lg"
-                    >
-                      URL
-                    </button>
-                  </Link>
+                      >
+                        URL
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
