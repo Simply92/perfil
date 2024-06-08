@@ -10,6 +10,10 @@ import redux from  "../assets/redux.svg";
 import sequelize from "../assets/sequelize.svg";
 import visual from "../assets/vscode.svg"
 import tailwind from "../assets/tailwind.png"
+import nextjs from "../assets/nextjs.svg"
+import typeScript from "../assets/typescript.svg"
+import zod from "../assets/zod.svg"
+import zustand from "../assets/zustand.png"
 
 const logos = [
 {
@@ -71,6 +75,26 @@ const logos = [
     id:11,
     name: "TAILWIND",
     img: tailwind
+},
+{
+    id:12,
+    name: "NEXTJS",
+    img: nextjs
+},
+{
+    id:13,
+    name:"TYPESCRIPT",
+    img: typeScript
+},
+{
+    id:14,
+    name: "ZOD",
+    img: zod
+},
+{
+    id:15,
+    name: "ZUSTAND",
+    img: zustand
 }
 ]
 
