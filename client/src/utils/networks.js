@@ -1,6 +1,6 @@
-import git from "../assets/github.svg";
-import instagram from "../assets/instagram.svg"
-import linkedin from "../assets/linkedin.svg"   
+import git from "../../public/redes/github.svg";
+import instagram from "../../public/redes/instagram.svg"
+import linkedin from "../../public/redes/linkedin.svg"   
 
 const redes = [
     {

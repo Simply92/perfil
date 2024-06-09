@@ -9,7 +9,7 @@ const Skills = () => {
       <h3>
         TECNOLOGIAS
       </h3>
-      <div className="grid grid-cols-2 md:grid-cols-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 md:mt-10">
         {logos.map((logo) => (
           <div
             key={logo.id}

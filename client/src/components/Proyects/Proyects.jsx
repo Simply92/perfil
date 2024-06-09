@@ -21,9 +21,16 @@ const Proyects = () => {
             >
               <img className="h-full w-1/3 rounded-s-lg" src={proyect.image} alt={proyect.name} />
               <div className="flex justify-center items-center group content-div w-2/3 relative">
-                <span className="font-semibold px-4 group-hover:opacity-0">
-                  {proyect.descripcion}
-                </span>
+                <div className="flex flex-col group-hover:opacity-0">
+                  <span className="font-semibold px-4">
+                    {proyect.descripcion}
+                  </span>
+                  <div className="flex flex-row flex-wrap items-center justify-center mt-2 gap-2">
+                    {proyect.skills.map(skill => (
+                      <img key={skill} className="h-10 w-10" src={skill} alt="Imagen de la tecnologia" />
+                    ))}
+                  </div>
+                </div>
                 <div className="absolute opacity-0 group-hover:opacity-100">
                   <span className="text-2xl font-bold text-white tracking-wider ">
                     {proyect.name}
