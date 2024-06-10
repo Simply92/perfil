@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full md:h-full h-screen bg-primary flex flex-col items-center justify-center p-4 min-w-[500px]"
+      className="w-full md:h-full bg-primary flex flex-col items-center justify-center p-4 min-w-[500px]"
     >
       <h3>
         CONTACTO

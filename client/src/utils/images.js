@@ -25,10 +25,13 @@ import nextjs from "../../public/skills/nextjs.svg"
 import typeScript from "../../public/skills/typescript.svg"
 import zod from "../../public/skills/zod.svg"
 import zustand from "../../public/skills/zustand.png"
+import cloudinary from "../../public/skills/cloudinary.svg"
+import prisma from "../../public/skills/prisma.svg"
+import vite from "../../public/skills/vitejs.svg"
 
 export const imageSkill = {
     html, css, express, javaScript, materialUI, nodejs, postgresql, react, redux,
-    sequelize, visual, tailwind, nextjs, typeScript, zod, zustand
+    sequelize, visual, tailwind, nextjs, typeScript, zod, zustand, cloudinary, prisma, vite
 }
 
 export const imageProyect = {

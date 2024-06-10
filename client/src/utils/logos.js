@@ -29,7 +29,7 @@ const logos = [
 {
     id:5,
     name: "MATERIAL UI",
-    img: imageSkill.materiasUI
+    img: imageSkill.materialUI
 },
 {
     id:6,
@@ -80,6 +80,21 @@ const logos = [
     id:15,
     name: "ZUSTAND",
     img: imageSkill.zustand
+},
+{
+    id:16,
+    name: "CLOUDINARY",
+    img: imageSkill.cloudinary
+},
+{
+    id:17,
+    name: "PRISMA",
+    img: imageSkill.prisma
+},
+{
+    id:18,
+    name: "VITE",
+    img: imageSkill.vite
 }
 ]
 

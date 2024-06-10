@@ -10,7 +10,7 @@ export const proyects = [
       git: "https://github.com/gabiMaglia/PF_HENRY",
       descripcion:
         "Proyecto final full stack en Henry, e-commerce de artículos de computación cuenta los paneles de administrador, técnico y cliente. Cuenta con listado de productos, carrito de compra con su respectiva pasarela de pago que se implementó con mercado pago, entre más funcionalidades.",
-      skills: [imageSkill.css, imageSkill.html, imageSkill.javaScript, imageSkill.react, imageSkill.materialUI, imageSkill.redux, imageSkill.express, imageSkill.postgresql, imageSkill.nodejs, imageSkill.sequelize]
+      skills: [imageSkill.html, imageSkill.javaScript, imageSkill.react, imageSkill.vite, imageSkill.materialUI, imageSkill.redux, imageSkill.express, imageSkill.postgresql, imageSkill.nodejs, imageSkill.sequelize]
     },
     {
       id: 1,
@@ -20,7 +20,7 @@ export const proyects = [
       git: "https://github.com/Simply92/Proyecto_pi_Front",
       descripcion:
         "Proyecto individual full stack en Henry, web app que cuenta con la funcionalidad de buscar, filtrar y crear pokemones.",
-      skills: [imageSkill.css, imageSkill.html, imageSkill.javaScript, imageSkill.react, imageSkill.redux, imageSkill.sequelize, imageSkill.nodejs, imageSkill.postgresql, imageSkill.express]
+      skills: [imageSkill.css, imageSkill.html, imageSkill.javaScript, imageSkill.react, imageSkill.vite, imageSkill.redux, imageSkill.sequelize, imageSkill.nodejs, imageSkill.postgresql, imageSkill.express]
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ export const proyects = [
       git: "https://github.com/Simply92/TS-RickAndMorty",
       descripcion:
         "Proyecto individual full stack en Henry, web app que cuenta con la funcionalidad de buscar personajes por id, agregarlos a favoritos, filtrarlos.",
-      skills: [imageSkill.html, imageSkill.typeScript, imageSkill.javaScript, imageSkill.react, imageSkill.tailwind, imageSkill.redux, imageSkill.sequelize, imageSkill.nodejs, imageSkill.postgresql, imageSkill.express]
+      skills: [imageSkill.html, imageSkill.typeScript, imageSkill.javaScript, imageSkill.react, imageSkill.tailwind, imageSkill.zustand, imageSkill.sequelize, imageSkill.nodejs, imageSkill.postgresql, imageSkill.express]
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ export const proyects = [
       git: "https://github.com/Simply92/AppVeterinaria",
       descripcion:
         "Proyecto de curso en Udemy, web app que cuenta con un formulario para agregar y modificar el listado pacientes.",
-      skills: [] 
+      skills: [imageSkill.html, imageSkill.javaScript, imageSkill.react, imageSkill.vite, imageSkill.tailwind] 
     },
     {
       id: 4,
@@ -50,7 +50,7 @@ export const proyects = [
       git: "https://github.com/Simply92/AppPresupuestos",
       descripcion:
         "Aplicación útil para calcular gastos personales partiendo de un presupuesto.",
-      skills: []
+      skills: [imageSkill.html, imageSkill.typeScript, imageSkill.react, imageSkill.vite, imageSkill.tailwind]
     },
     {
       id: 5,
@@ -60,7 +60,7 @@ export const proyects = [
       git: "https://github.com/Simply92/AppClima",
       descripcion:
         "Aplicación útil para consultar el clima, cuenta con un formulario donde se escribe la ciudad deseada y seleccionando el país.",
-      skills: []
+      skills: [imageSkill.html, imageSkill.typeScript, imageSkill.react, imageSkill.vite, imageSkill.tailwind, imageSkill.zod]
     },
     {
       id: 6,
@@ -70,7 +70,7 @@ export const proyects = [
       git: "https://github.com/Simply92/appCarritoTS",
       descripcion:
         "Aplicación de tienda de guitarras con su respectivo carrito de compras",
-      skills: []
+      skills: [imageSkill.html, imageSkill.typeScript, imageSkill.react, imageSkill.vite, imageSkill.tailwind]
     },
     {
       id: 7,
@@ -80,7 +80,7 @@ export const proyects = [
       git: "https://github.com/Simply92/AppCalorias",
       descripcion:
         "Aplicación para calcular calorías consumida y quemadas.",
-      skills: []
+      skills: [imageSkill.html, imageSkill.typeScript, imageSkill.react, imageSkill.vite, imageSkill.tailwind]
     },
     {
       id: 8,
@@ -90,7 +90,7 @@ export const proyects = [
       git: "https://github.com/Simply92/AppCotizador",
       descripcion:
         "Aplicación en la cual podés saber la cotización de la criptomoneda que selecciones en la moneda de tu país.",
-      skills: []
+      skills: [imageSkill.html, imageSkill.typeScript, imageSkill.react, imageSkill.vite, imageSkill.tailwind, imageSkill.zod, imageSkill.zustand]
     },
     {
       id: 9,
@@ -100,6 +100,6 @@ export const proyects = [
       git: "https://github.com/Simply92/quiosco-next",
       descripcion:
         "Aplicación que cuenta con sus categorías con sus respectivos productos y podés realizar una orden, además tiene un panel administrador para sumar más productos o modificar los existentes.",
-      skills: []
+      skills: [imageSkill.html, imageSkill.typeScript, imageSkill.react, imageSkill.nextjs, imageSkill.tailwind, imageSkill.zod, imageSkill.zustand, imageSkill.cloudinary, imageSkill.prisma]
     },
   ];

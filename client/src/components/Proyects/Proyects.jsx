@@ -21,7 +21,7 @@ const Proyects = () => {
             >
               <img className="h-full w-1/3 rounded-s-lg" src={proyect.image} alt={proyect.name} />
               <div className="flex justify-center items-center group content-div w-2/3 relative">
-                <div className="flex flex-col group-hover:opacity-0">
+                <div className="flex flex-col md:gap-10 group-hover:opacity-0">
                   <span className="font-semibold px-4">
                     {proyect.descripcion}
                   </span>
