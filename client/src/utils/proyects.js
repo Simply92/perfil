@@ -96,7 +96,7 @@ export const proyects = [
       id: 9,
       name: "App quiosco[EN PROCESO]",
       image: imageProyect.Proyect10,
-      url: "https://quiosco-next-opal.vercel.app/order/cafe",
+      url: "https://quiosco-next-gieqyjwf7-simply92s-projects.vercel.app/",
       git: "https://github.com/Simply92/quiosco-next",
       descripcion:
         "Aplicación que cuenta con sus categorías con sus respectivos productos y podés realizar una orden, además tiene un panel administrador para sumar más productos o modificar los existentes.",
