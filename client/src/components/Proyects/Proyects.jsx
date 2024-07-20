@@ -5,12 +5,12 @@ const Proyects = () => {
   return (
     <div
       name="proyect"
-      className="w-full md:max-w-[1500px] md:h-auto bg-primary md:min-w-[500px] py-2 flex flex-col justify-center items-center"
+      className="w-full md:h-auto bg-primary py-2 flex flex-col justify-center items-center"
     >
       <h3>
         PROYECTOS
       </h3>
-      <div className="grid grid-cols-1 lg:grid-cols-2 mt-4 md:mt-10 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mt-4 md:mt-10 gap-4 md:max-w-[1500px] md:min-w-[500px]">
         {proyects.map((proyect) => (
           <div
             key={proyect.id}
