@@ -46,7 +46,7 @@ const Navbar = () => {
         }
       >
         {navPages.map((item, i) => (
-          <li key={i} className="py-6 text-4xl">
+          <li key={i} className="py-6 text-xl">
             <Link
               onClick={handleClick}
               to={item.to}

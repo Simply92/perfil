@@ -39,13 +39,13 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full md:h-full bg-primary flex flex-col items-center justify-center p-4 min-w-[500px]"
+      className="w-full md:h-full bg-primary flex flex-col items-center justify-center p-4 md:min-w-[500px]"
     >
       <h3>
         CONTACTO
       </h3>
       <form
-        className="flex flex-col py-10 md:w-1/2"
+        className="flex flex-col py-10 md:w-1/2 w-full"
         onSubmit={handleSubmit(menssage)}
       >
         <div className={formStyle}>

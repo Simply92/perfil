@@ -16,7 +16,7 @@
     color: rgb(74 222 128 / var(--tw-text-opacity));
     } 
     h3{
-        @apply text-4xl font-bold inline border-b-4 text-gray-300 md:mt-28
+        @apply md:text-4xl text-xl font-bold inline border-b-4 text-gray-300 mt-2 md:mt-28
     }
 }
 

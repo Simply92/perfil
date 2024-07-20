@@ -4,12 +4,12 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="flex flex-col items-center w-full h-full md:h-screen bg-[#0a192f] text-gray-300 min-w-[500px]"
+      className="flex flex-col items-center w-full h-full md:h-screen bg-primary text-gray-300 md:min-w-[500px]"
     >
       <h3>
         TECNOLOGIAS
       </h3>
-      <div className="grid grid-cols-3 md:grid-cols-5 md:mt-10 mb-10">
+      <div className="grid grid-cols-2 md:grid-cols-5 mt-4 md:mt-10 mb-10">
         {logos.map((logo) => (
           <div
             key={logo.id}
